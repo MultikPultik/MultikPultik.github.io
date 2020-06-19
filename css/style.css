@@ -1,30 +1,28 @@
-@charset "UTF-8";
-/* line 1, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 * {
   font-family: 'Roboto', sans-serif;
 }
 
-/* line 4, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 header {
   background-color: #212121;
 }
 
-/* line 7, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .container {
   width: 1140px;
   margin: 0 auto;
 }
 
-/* line 11, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   padding: 13px 70px;
   margin: 0;
   list-style-type: none;
 }
 
-/* line 18, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .menu .list_a {
   text-decoration: none;
   color: #ffffff;
@@ -32,26 +30,22 @@ header {
   font-weight: 300;
 }
 
-/* line 24, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .menu .list_item {
   border-right: 2px dashed black;
   padding-right: 28px;
 }
 
-/* line 28, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .subheader {
   height: 84px;
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-/* line 32, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .subheader .subheader_logo {
   padding-top: 16px;
   max-width: 100%;
   display: block;
 }
 
-/* line 37, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .subheader .subheader_official {
   margin-top: 6px;
   opacity: 0.5;
@@ -60,7 +54,6 @@ header {
   font-weight: 400;
 }
 
-/* line 44, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .subheader .subheader_call {
   padding-left: 22px;
   padding-top: 23px;
@@ -69,7 +62,6 @@ header {
   font-weight: 300;
 }
 
-/* line 51, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .subheader .subheader_phone {
   color: #ffffff;
   font-size: 22px;
@@ -77,13 +69,14 @@ header {
   text-transform: uppercase;
 }
 
-/* line 57, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .subheader .subheader_btn {
   margin-top: 19px;
   width: 172px;
   height: 46px;
-  box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: inset 0 -3px 0 rgba(0, 0, 0, 0.12);
   border: none;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
   background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
   border-radius: 4px;
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
@@ -93,13 +86,11 @@ header {
   text-transform: uppercase;
 }
 
-/* line 71, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .promo {
   min-height: 800px;
   background: url("../img/bg_main.jpg") center center/cover no-repeat;
 }
 
-/* line 75, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .promo .promo_header {
   margin-top: 67px;
   margin: 67px 0;
@@ -111,7 +102,6 @@ header {
   text-align: center;
 }
 
-/* line 85, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .promo .promo_subheader {
   color: #ffffff;
   font-weight: 700;
@@ -119,7 +109,6 @@ header {
   text-align: center;
 }
 
-/* line 91, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .promo .promo_text {
   margin: 23px 93px;
   color: #ffffff;
@@ -129,14 +118,15 @@ header {
   text-align: center;
 }
 
-/* line 99, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .promo .promo_btn {
   margin: 118px 348px;
   width: 259px;
   height: 63px;
-  box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+  -webkit-box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
+          box-shadow: inset 0 -4px 0 rgba(0, 0, 0, 0.12);
   border: none;
   border-radius: 4px;
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#1eacc7), to(#4ce2ff));
   background-image: linear-gradient(to top, #1eacc7 0%, #4ce2ff 100%);
   text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.21);
   color: #ffffff;
@@ -145,18 +135,17 @@ header {
   text-transform: uppercase;
 }
 
-/* line 113, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
-.preference {
-  margin: 71px 0 65px 0;
-}
-
-/* line 115, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
-.preference .preference_at_header {
+.before_header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-left: 100px;
-  margin: 71px 514px 0 514px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
   text-align: center;
   width: 112px;
   height: 24px;
@@ -167,8 +156,7 @@ header {
   text-transform: uppercase;
 }
 
-/* line 130, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
-.preference .preference_header {
+.header {
   color: #222222;
   font-size: 38px;
   font-weight: 700;
@@ -177,21 +165,36 @@ header {
   margin-top: 38px;
 }
 
-/* line 138, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
+.preference {
+  margin: 71px 0 65px 0;
+}
+
 .preference .preference_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-top: 35px;
 }
 
-/* line 144, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .preference .preference_round {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-self: start;
+  -ms-flex-item-align: start;
+      align-self: start;
   margin-top: 10px;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   margin-right: 24px;
   width: 113px;
   height: 113px;
@@ -199,12 +202,10 @@ header {
   border-radius: 100%;
 }
 
-/* line 156, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .preference .preference_item_text {
   width: 343px;
 }
 
-/* line 159, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .preference .preference_item_hdr {
   font-size: 17px;
   font-weight: 400;
@@ -212,7 +213,6 @@ header {
   color: #1eacc7;
 }
 
-/* line 165, ../../../BeOnMAX/ВЕБ-разработчик 2020 - с нуля до результата!/Урок 2.3/HomeWork/sass/style.sass */
 .preference_item .preference_text {
   color: #202020;
   font-size: 15px;
@@ -221,4 +221,83 @@ header {
   text-align: justify;
 }
 
+.after_header {
+  color: #222222;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 21px;
+  text-align: center;
+  margin-top: 19px;
+}
+
+.mobile {
+  padding: 48px 0 80px 0;
+  min-height: 864px;
+}
+
+.mobile .row {
+  margin-top: 32px;
+}
+
+.mobile_item {
+  position: relative;
+  width: 320px;
+  height: 280px;
+  margin: 0 auto;
+  margin-bottom: 19px;
+  padding-top: 92px;
+}
+
+.mobile_item1 {
+  background: url("../img/item1.jpg") center center/cover no-repeat;
+}
+
+.mobile_item2 {
+  background: url("../img/item2.jpg") center center/cover no-repeat;
+}
+
+.mobile_item3 {
+  background: url("../img/item3.jpg") center center/cover no-repeat;
+}
+
+.mobile_item4 {
+  background: url("../img/item4.jpg") center center/cover no-repeat;
+}
+
+.mobile_item5 {
+  background: url("../img/item5.jpg") center center/cover no-repeat;
+}
+
+.mobile_item6 {
+  background: url("../img/item6.jpg") center center/cover no-repeat;
+}
+
+.mobile_item_subtitle {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 31px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.mobile_item_plus {
+  width: 26px;
+  height: 26px;
+  background-color: #000000;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  bottom: 35px;
+  left: 147px;
+  cursor: pointer;
+}
 /*# sourceMappingURL=style.css.map */
