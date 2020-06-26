@@ -204,8 +204,8 @@ header {
       -ms-flex-pack: center;
           justify-content: center;
   margin-right: 24px;
-  width: 113px;
-  height: 113px;
+  min-width: 113px;
+  min-height: 113px;
   background-color: #1eacc7;
   border-radius: 100%;
 }
