@@ -44,13 +44,13 @@ header {
   background-color: rgba(0, 0, 0, 0.6);
 }
 
-.subheader .subheader_logo {
+.subheader_logo {
   padding-top: 16px;
   max-width: 100%;
   display: block;
 }
 
-.subheader .subheader_official {
+.subheader_official {
   margin-top: 6px;
   opacity: 0.5;
   color: #ffffff;
@@ -58,7 +58,7 @@ header {
   font-weight: 400;
 }
 
-.subheader .subheader_call {
+.subheader_call {
   padding-left: 22px;
   padding-top: 23px;
   color: #ffffff;
@@ -67,7 +67,7 @@ header {
   text-align: right;
 }
 
-.subheader .subheader_phone {
+.subheader_phone {
   display: block;
   color: #ffffff;
   font-size: 22px;
@@ -76,7 +76,7 @@ header {
   text-align: right;
 }
 
-.subheader .subheader_btn {
+.subheader_btn {
   margin-top: 19px;
   width: 172px;
   height: 46px;
@@ -98,7 +98,7 @@ header {
   background: url("../img/bg_main.jpg") center center/cover no-repeat;
 }
 
-.promo .promo_header {
+.promo_header {
   margin-top: 67px;
   margin: 67px 0;
   color: #ffffff;
@@ -109,15 +109,14 @@ header {
   text-align: center;
 }
 
-.promo .promo_subheader {
+.promo_subheader {
   color: #ffffff;
   font-weight: 700;
   line-height: 48px;
   text-align: center;
 }
 
-.promo .promo_text {
-  margin: 23px 93px;
+.promo_text {
   color: #ffffff;
   font-size: 18px;
   font-weight: 400;
@@ -125,7 +124,7 @@ header {
   text-align: center;
 }
 
-.promo .promo_btn {
+.promo_btn {
   display: block;
   margin: 118px auto 0 auto;
   width: 259px;
@@ -177,7 +176,7 @@ header {
   margin: 71px 0 65px 0;
 }
 
-.preference .preference_item {
+.preference_item {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -190,7 +189,7 @@ header {
   margin-top: 35px;
 }
 
-.preference .preference_round {
+.preference_round {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,11 +209,11 @@ header {
   border-radius: 100%;
 }
 
-.preference .preference_item_text {
+.preference_item_text {
   width: 343px;
 }
 
-.preference .preference_item_hdr {
+.preference_item_hdr {
   font-size: 17px;
   font-weight: 400;
   line-height: 21px;
@@ -330,14 +329,7 @@ header {
 }
 
 .choice .container {
-  position: relative;
   min-height: 498px;
-}
-
-.choice .container .half_circle {
-  position: absolute;
-  left: 279px;
-  bottom: 0;
 }
 
 .every_day {
@@ -345,15 +337,38 @@ header {
   background: url("../img/bg_choice.jpg") center center/cover no-repeat;
 }
 
-.every_day .container {
+.every_day_wraper {
+  margin: 0 auto;
   position: relative;
 }
 
-.every_day .container .every_day_img_car {
+.every_day_half_circle {
+  margin: 0 auto;
+  width: 583px;
+  position: absolute;
+  top: -267px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.every_day_half_circle img {
+  width: 100%;
+}
+
+.every_day_img_car {
+  width: 759px;
+  margin: 0 auto;
   position: absolute;
   min-height: 347px;
-  margin-top: -134px;
-  margin-left: 192px;
+  top: -134px;
+  right: 0;
+  left: -28px;
+  bottom: 0;
+}
+
+.every_day_img_car img {
+  width: 100%;
 }
 
 .every_day_text {
@@ -587,6 +602,90 @@ header {
   }
   .promo .promo_header {
     font-size: 50px;
+  }
+  .promo .promo_subheader {
+    font-size: 34px;
+  }
+  .mobile_item {
+    width: 300px;
+  }
+  .mobile_item_subtitle {
+    font-size: 18px;
+  }
+  .mobile_item_plus {
+    left: 140px;
+  }
+}
+
+@media (max-width: 991px) {
+  .menu .list_item {
+    padding-right: 8px;
+  }
+  .menu .list_a {
+    font-size: 10px;
+  }
+  .subheader_logo img {
+    width: 100%;
+  }
+  .subheader_official {
+    font-size: 11px;
+  }
+  .subheader_phone {
+    font-size: 16px;
+  }
+  .subheader_btn {
+    width: 100%;
+    height: 40px;
+    margin-top: 26px;
+  }
+  .promo_header {
+    font-size: 40px;
+  }
+  .promo_subheader {
+    font-size: 30px;
+  }
+  .promo_btn {
+    margin: 70px auto 0 auto;
+  }
+  .preference .header {
+    font-size: 32px;
+  }
+  .preference_item {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .preference_item_text {
+    width: 300px;
+  }
+  .preference_item_hdr {
+    margin-top: 20px;
+  }
+  .preference_round {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .mobile_item {
+    width: 221px;
+    height: 200px;
+    padding-top: 60px;
+  }
+  .mobile_item_subtitle {
+    font-size: 16px;
+  }
+  .mobile_item_plus {
+    left: 100px;
+  }
+  .every_day_half_circle {
+    width: 500px;
+  }
+  .every_day_img_car {
+    width: 670px;
   }
 }
 /*# sourceMappingURL=style.css.map */
