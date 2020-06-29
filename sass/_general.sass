@@ -11,7 +11,6 @@ header
     padding: 13px 70px
     margin: 0
     list-style-type: none
-
     .list_a
         text-decoration: none
         color: #ffffff
@@ -120,7 +119,7 @@ header
     text-align: center
     width: 112px
     height: 24px
-    background-color: #000000
+    background-color: #000000 
     color: #ffffff
     font-size: 11px
     font-weight: 400
@@ -307,31 +306,34 @@ header
     .conditions_desc
         color: #ff5656
     .list_item:before 
-        background: url(../ico/red_marker.png) center (center / cover) no-repeat
+        background: url(../ico/red_marker.png) center center / cover no-repeat
 .city
-    background: #080816
-    .container
-        min-height: 717px
-        min-width: 1440px
-        background: url(../img/bg_city.jpg) center (center / cover) no-repeat        
-        padding: 49px 0
-        .before_header
-            background-color: #ffffff
-            color: #070716
-        .header
-            color: #ffffff
-        .after_header
-            color: #ffffff
-            margin-top: 20px
-        .link_city
-            display: block
-            color: #1fbad6
-            font-size: 15px
-            font-weight: 400
-            text-transform: uppercase
-            margin-top: 486px
-            text-align: center
-            text-decoration: none
+    position: relative
+    min-height: 717px
+    background: url(../img/bg_city.jpg) center center / cover no-repeat
+    padding: 49px 0
+    .before_header
+        background-color: #ffffff
+        color: #070716
+    .header
+        color: #ffffff
+    .after_header
+        color: #ffffff
+        margin-top: 20px
+    .link_city
+        position: absolute
+        display: block
+        color: #1fbad6
+        font-size: 15px
+        font-weight: 400
+        text-transform: uppercase
+        left: 50%
+        transform: translateX(-50%)
+        bottom: 49px
+        
+        text-decoration: none
+footer
+    padding: 14px 23px 39px 23px
 .footer
     &_top_line
         width: 299px
@@ -339,15 +341,21 @@ header
         background-color: #1fbad6
         margin: 14px auto 0
     &_container_flex
-        margin: 32px 26px
+        padding-top: 32px
         display: flex
         justify-content: space-between
-        align-content: center
+        align-items: flex-start
     &_container_flex > div
         width: 33%
         &:nth-child(3)
             display: flex
             justify-content: flex-end
+    &_mobile
+        display: flex
+        .link_item
+            margin: 0 4px
+            img
+                width: 100%
     &_social
         display: flex
         width: 160px
@@ -358,6 +366,7 @@ header
             background-color: #070716
             border-radius: 50%
             text-align: center
+            margin: 0 4px
             img
                 margin-top: 6px
     &_links
@@ -391,10 +400,4 @@ header
             font-weight: 400
             text-transform: uppercase
             text-align: center
-    &_mobile
-        display: flex
-        justify-content: space-between
-        align-content: center
-        img
-            height: 32px
-            margin: 0 7px
+    

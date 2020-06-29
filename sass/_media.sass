@@ -16,7 +16,16 @@
                 font-size: 18px
             &_plus
                 left: 140px
-
+    .footer
+        &_container_flex > div
+            width: 25%
+            &:nth-child(2)
+                width: 50%
+        &_mobile
+            .link_item
+                img
+                    width: 100%
+            
 @media ( max-width: 991px )
     .menu
         .list_item
@@ -68,6 +77,23 @@
             width: 500px
         &_img_car
             width: 670px
-
+    .city
+        min-height: 650px
+    
+    .footer
+        &_container_flex
+            flex-wrap: wrap
+        &_container_flex > div
+            display: flex
+            justify-content: center
+            width: 100%
+            margin-bottom: 20px
+            &:nth-child(2)
+                width: 100%
+            &:nth-child(3)
+                width: 100%
+                justify-content: center
+        &_links_sub
+            margin-top: 4px
+            
         
-
